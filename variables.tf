@@ -2,7 +2,10 @@ variable "vpc_id" {
   type        = string
   description = "VPC ID"
 }
-
+variable "extra_alert_desc" {
+  type = string
+  default = ""
+}
 variable "subnets" {
   type        = list(string)
   description = "Subnet IDs"
